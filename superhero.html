@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Hunter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h4 class="gradient-text" onclick="window.location.href='index.html'">Home</h4><img src="./images/favorites.png"
+           class="favorites-icon" onclick="window.location.href='favorites.html'">
+    </div>
+    <div class="superhero-main">
+        <div id="superhero-details">
+            <h3 id ="heroName"></h3>
+            <img class="card-img-top" id="heroImage"/>
+            <div id="heroDescription"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script type="module" src="js/md5.js"></script>
+    <script type="module" src="js/superhero.js"></script>
+</body>
+
+</html>

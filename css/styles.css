@@ -1,0 +1,119 @@
+body{
+    background-image: url('../images/marvelheroes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    width: 100vw;
+    overflow:auto;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f8795d, #333333);
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 5vh;
+    background: #232323;
+}
+.indexResult{
+    height: 72vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.results{
+    height: 90vh;
+    margin-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gradient-text{
+    cursor: pointer;
+    width: 22vw;
+    color: white;
+    text-align: center;
+    
+}
+
+.image-dimension{
+    height: 50vh;
+}
+
+#superhero-details{
+    background: linear-gradient(to right, #fffefd, #333333);
+    width: 30%;
+    height: 93vh;
+    margin-top:1px;
+    
+}
+
+#superhero-details::before{
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to bottom, #f8795d, #333333);
+        opacity: 0.4;
+        z-index: -1;
+        position: fixed;
+}
+
+.superhero-main{
+    display: flex;
+    justify-content: center;
+}
+
+#heroName{
+    display: flex;
+    justify-content: center;
+}
+
+#heroImage{
+    height: 63%;
+}
+
+#heroDescription{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.favorites-icon{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
