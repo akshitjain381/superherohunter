@@ -18,7 +18,7 @@ export function removeFromFavorites(id) {
 window.removeFromFavorites = removeFromFavorites;
 
 async function displayFavorites() {
-    if (!window.location.href.includes('index')) {
+    if (window.location.href.includes('favorites')) {
         const favorites = getFavorites();
     const results = document.getElementById('results');
     results.innerHTML = '';
